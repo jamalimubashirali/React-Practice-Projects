@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 function App() {
+  // Reqiured varibales for state and its functions to manage them
   const [length , setLength] = useState(8);
   const [isNumberAllowed , setIsNumberAllowed] = useState(false);
   const [isCharacterAllowed , setIsCharacterAllowed] = useState(false);
   const [password , setPassword] = useState("");
 
+  // Password Generator Function
   const strongPassword = useCallback(() => {
     let password = "";
     let passString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -23,18 +25,22 @@ function App() {
     setPassword(password);
   }, [length , isNumberAllowed , isCharacterAllowed , password]);
 
+  // useEffect for using the functionlality of memoized function.
   useEffect(() => {
     strongPassword();
   }, [length , isCharacterAllowed , isNumberAllowed]);
 
+  // To add Refernce of Password field and copy button
   const passRef = useRef(null);
 
+  // Fucntion for useRef implementaiton
   const copyPassword = useCallback(() => {
     passRef.current?.select();
     window.navigator.clipboard.writeText(password);
   }, [password])
   return (
     <>
+    {/* Html code for the simple field and related components to generator the strong password */}
       <div className="w-6/12 mt-4 mx-auto my-auto p-4 rounded-2xl bg-slate-500
       flex flex-col justify-center ">
         <h1 className="text-4xl text-center">Passwor Generator</h1>
