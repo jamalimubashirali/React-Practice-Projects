@@ -1,15 +1,14 @@
-import React from 'react'
-import NavBar from './NavBar'
-import Biodata from './Biodata'
-import About from './About'
+import React from 'react';
+import NavBar from './NavBar';
+import About from './About';
 
 const Header = () => {
   return (
-    <div className="">
-      <NavBar/>
+    <div className="transition-all duration-300 ease-in-out">
+      <NavBar />
       <About />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
