@@ -10,10 +10,10 @@ const NavBar = () => {
         <Navlinks data={"Hello"} />
         <Navlinks data={"Services"} />
         <Navlinks data={"Resume"} />
+        <Navlinks data={"Skills"} />
         <Navlinks data={"Portfolio"} />
         <Navlinks data={"Contact"} />
       </div>
-
       {/* Biodata Section */}
       <Biodata />
     </div>
