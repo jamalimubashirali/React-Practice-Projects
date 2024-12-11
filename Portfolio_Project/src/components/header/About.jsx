@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col mt-20  md:mx-20 gap-4">
+    <div className="flex flex-col mt-20 md:mx-20 gap-4">
       <h1 className="text-3xl md:text-4xl font-bold font-mono">Hi_</h1>
       <p className="text-sm md:text-base">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,

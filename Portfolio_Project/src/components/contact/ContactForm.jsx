@@ -24,19 +24,16 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-[40%] text-white">
+    <div className="w-full md:w-[40%] text-white">
       <p className="text-lg text-gray-300 mb-10">
-          Feel free to reach out to me for collaborations, inquiries, or just to say hello!
-        </p>
+        Feel free to reach out to me for collaborations, inquiries, or just to say hello!
+      </p>
       {successMessage && (
-        <p className="text-green-600 mb-4">{successMessage}</p>
+        <p className="text-green-600 mb-4 transition-opacity duration-500 opacity-100">{successMessage}</p>
       )}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label
-            htmlFor="name"
-            className="block text-sm font-medium"
-          >
+          <label htmlFor="name" className="block text-sm font-medium">
             Your Name
           </label>
           <input
@@ -45,15 +42,12 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500"
+            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
             required
           />
         </div>
         <div>
-          <label
-            htmlFor="email"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
             Your Email
           </label>
           <input
@@ -62,15 +56,12 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500"
+            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
             required
           />
         </div>
         <div>
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
             Your Message
           </label>
           <textarea
@@ -79,7 +70,7 @@ const ContactForm = () => {
             rows="4"
             value={formData.message}
             onChange={handleChange}
-            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500"
+            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
             required
           ></textarea>
           <p className="mb-2 mt-2 font-semibold">Write all the given fields</p>

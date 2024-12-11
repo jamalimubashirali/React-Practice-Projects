@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BiodataItem = ({ itemDes, itemData }) => {
   return (
     <div className="flex flex-row gap-4 items-center transition-transform duration-300 ease-in-out hover:scale-105 font-mono">

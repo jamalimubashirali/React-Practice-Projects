@@ -1,6 +1,6 @@
-import React from 'react';
-import NavBar from './NavBar';
-import About from './About';
+import React, { useState } from "react";
+import NavBar from "./NavBar";
+import About from "./About";
 
 const Header = () => {
   return (

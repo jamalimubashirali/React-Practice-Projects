@@ -1,13 +1,12 @@
 import React from 'react';
 import ServiceLogo from './ServiceLogo';
-import Dot from './Dot';
 
 const Service = ({ name, logo, des }) => {
   return (
-    <div className="group w-full sm:w-1/3 rounded-md border-2 border-gray-400 flex flex-col items-center justify-center p-8 gap-6 transition-all duration-300 ease-in-out hover:scale-105 relative">
+    <div className="group w-full sm:w-1/2 md:w-1/3 rounded-md border-2 border-gray-400 flex flex-col items-center justify-center p-6 sm:p-8 md:p-10 gap-4 sm:gap-6 transition-all duration-300 ease-in-out hover:scale-105 relative">
       <ServiceLogo logo={logo} />
-      <h1 className="font-mono font-bold text-xl sm:text-2xl uppercase text-center">{name}</h1>
-      <p className="text-center">{des}</p>
+      <h1 className="font-mono font-bold text-lg sm:text-xl md:text-2xl uppercase text-center">{name}</h1>
+      <p className="text-sm sm:text-base md:text-lg text-center">{des}</p>
     </div>
   );
 };

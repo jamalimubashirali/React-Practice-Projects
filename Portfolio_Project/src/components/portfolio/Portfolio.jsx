@@ -7,39 +7,39 @@ const Portfolio = () => {
       {
         name: "Project 1",
         image: "",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        des: "A web project demonstrating HTML, CSS, and JavaScript.",
         techStack: ["CSS", "HTML", "JavaScript"],
         websiteLink: "https://www.google.com",
       },
       {
         name: "Project 2",
         image: "",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        des: "Another exciting web project.",
         techStack: ["CSS", "HTML", "JavaScript"],
         websiteLink: "https://www.google.com",
       },
     ],
     mobile: [
       {
-        name: "Project 1",
+        name: "Mobile Project 1",
         image: "",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        des: "A mobile project using Flutter.",
         techStack: ["Dart", "Flutter"],
         websiteLink: "https://www.google.com",
       },
       {
-        name: "Project 2",
+        name: "Mobile Project 2",
         image: "",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        des: "Another mobile project with amazing features.",
         techStack: ["Dart", "Flutter"],
         websiteLink: "https://www.google.com",
       },
     ],
     ai: [
       {
-        name: "Project 1",
+        name: "AI Project 1",
         image: "",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        des: "An AI project showcasing Python and Pandas.",
         techStack: ["Python", "Numpy", "Pandas"],
         websiteLink: "https://www.google.com",
       },
@@ -47,29 +47,33 @@ const Portfolio = () => {
   };
 
   const [workItems, setWorkItems] = useState([...work.web, ...work.mobile, ...work.ai]);
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const handleFilter = (category) => {
+    setActiveCategory(category);
     if (category === "All") {
       setWorkItems([...work.web, ...work.mobile, ...work.ai]);
-    } else if (category === "Web") {
-      setWorkItems(work.web);
-    } else if (category === "Mobile") {
-      setWorkItems(work.mobile);
-    } else if (category === "AI") {
-      setWorkItems(work.ai);
+    } else {
+      setWorkItems(work[category.toLowerCase()]);
     }
   };
 
+  const categories = ["All", "Web", "Mobile", "AI"];
+
   return (
-    <div className="m-20">
-      <h1 className="text-4xl font-bold mb-10">Work_</h1>
-      <div className="flex flex-row gap-12">
-        <WorkType name={"All"} handleFilter={handleFilter} />
-        <WorkType name={"Web"} handleFilter={handleFilter} />
-        <WorkType name={"Mobile"} handleFilter={handleFilter} />
-        <WorkType name={"AI"} handleFilter={handleFilter} />
+    <div className="m-10 md:m-20">
+      <h1 className="text-3xl md:text-4xl font-bold mb-8 font-mono">Work_</h1>
+      <div className="flex flex-wrap gap-6 mb-8">
+        {categories.map((category) => (
+          <WorkType
+            key={category}
+            name={category}
+            isActive={activeCategory === category}
+            handleFilter={handleFilter}
+          />
+        ))}
       </div>
-      <div className="flex flex-col gap-6 mt-10">
+      <div className="flex flex-col gap-6">
         {workItems.map((item, index) => (
           <ProjectCard
             key={index}
@@ -85,13 +89,16 @@ const Portfolio = () => {
   );
 };
 
-const WorkType = ({ name, handleFilter }) => {
+const WorkType = ({ name, isActive, handleFilter }) => {
   return (
-    <div onClick={() => handleFilter(name)}>
-      <p className="font-bold font-mono uppercase text-base md:text-lg text-gray-800 hover:text-gray-100 cursor-pointer transition-colors duration-300 ease-in-out hover:after:content-['\_'] after:absolute">
-        {name}
-      </p>
-    </div>
+    <button
+      onClick={() => handleFilter(name)}
+      className={`font-bold font-mono uppercase text-sm md:text-lg px-4 py-1 rounded-full transition-colors duration-300 ease-in-out 
+        ${isActive ? "bg-black text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"} shadow-lg`}
+      aria-label={`Filter by ${name}`}
+    >
+      {name}
+    </button>
   );
 };
 

@@ -4,8 +4,8 @@ import SocialItem from "./SocialItem";
 
 const Biodata = () => {
   return (
-    <div className="absolute top-28">
-      <div className="flex flex-col md:flex-row gap-24">
+    <div className="relative top-0 mt-8"> {/* Changed position to relative and added margin */}
+      <div className="flex flex-col md:flex-row gap-12 md:gap-24">
         <img
           src="src/assets/My_Pic.jpg"
           alt="Profile"

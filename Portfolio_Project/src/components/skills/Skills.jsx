@@ -18,17 +18,19 @@ const Skills = () => {
     AI: [
       { name: "Python", level: 70 },
       { name: "Machine Learning", level: 60 },
-      { name: "Data Visuallization", level: 70 },
+      { name: "Data Visualization", level: 70 },
       { name: "Data Analysis", level: 65 },
     ],
   };
 
-    return (
-        <div className="m-20">
-          <h1 className="text-4xl font-bold mb-10">Skills_</h1>
-          <div className="w-full flex flex-row gap-32">
-          {Object.entries(skills).map(([category, skillsList]) => (
-          <div key={category} className="flex-1 flex flex-col">
+  return (
+    <div className="m-20">
+      <h1 className="text-4xl font-bold mb-10 transition-all duration-300 ease-in-out transform hover:scale-105">
+        Skills_
+      </h1>
+      <div className="w-full flex flex-wrap gap-8 justify-center sm:gap-16 md:gap-32">
+        {Object.entries(skills).map(([category, skillsList]) => (
+          <div key={category} className="flex-1 flex flex-col md:w-1/3 transition-all duration-300 ease-in-out transform hover:scale-105">
             <h2 className="text-xl font-bold uppercase tracking-wider mb-4">{category}</h2>
             <div className="flex flex-col gap-4">
               {skillsList.map((skill, index) => (
@@ -41,10 +43,9 @@ const Skills = () => {
             </div>
           </div>
         ))}
-          </div>
-        </div>
-      );
-    };
-
+      </div>
+    </div>
+  );
+};
 
 export default Skills;

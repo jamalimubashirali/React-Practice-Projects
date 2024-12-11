@@ -21,7 +21,7 @@ const ProjectCard = ({ title, image, deploylink, des, techStack }) => {
         </div>
         <a
           href={deploylink}
-          className="mt-4 text-blue-500 hover:underline text-sm self-end"
+          className="mt-4 text-blue-500 hover:underline text-sm text-right"
           target="_blank"
           rel="noopener noreferrer"
         >
