@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col mt-20 md:mx-20 gap-4">
-      <h1 className="text-3xl md:text-4xl font-bold font-mono">Hi_</h1>
-      <p className="text-sm md:text-base">
+    <div className="flex flex-col mt-10 lg:px-20 md:px-10 xl:px-auto px-3 gap-4">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-mono">Hi_</h1>
+      <p className="text-sm sm:text-base md:text-lg lg:text-xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
         quaerat quae. Corrupti nam animi dignissimos! Impedit cum delectus
         sapiente quia numquam saepe consectetur placeat excepturi molestiae.
