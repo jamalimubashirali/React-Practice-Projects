@@ -25,7 +25,7 @@ const FirstBar = styled.div`
 const SkillSlider = ({ skillName, skillLevel }) => {
   return (
     <div className="mb-6">
-      <label className="text-lg font-medium mb-2 flex items-center justify-between transition-all duration-300 ease-in-out transform hover:scale-105">
+      <label className="text-base lg:text-lg font-medium flex items-center justify-between transition-all duration-300 ease-in-out transform hover:scale-105">
         <span>{skillName}</span>
         <span>{skillLevel}%</span>
       </label>

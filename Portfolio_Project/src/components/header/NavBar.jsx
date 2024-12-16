@@ -8,7 +8,7 @@ const NavBar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="relative w-full bg-black px-3 py-3 lg:px-20 md:px-10 sm:px-5 lg:py-8 md:py-5 sm:py-3 font-mono">
+    <div className="relative w-full bg-black p-6 lg:px-20 md:px-10 sm:px-5 lg:py-8 md:py-5 sm:py-3 font-mono">
       {/* Hamburger Menu for Small Screens */}
       <div className="flex justify-between items-center mb-5 md:hidden">
         <h1 className="text-white text-lg sm:text-xl font-bold uppercase">

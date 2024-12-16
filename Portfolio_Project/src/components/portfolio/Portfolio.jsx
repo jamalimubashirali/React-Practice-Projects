@@ -61,7 +61,7 @@ const Portfolio = () => {
   const categories = ["All", "Web", "Mobile", "AI"];
 
   return (
-    <div className="m-10 md:m-20">
+    <div className="m-6 lg:m-20 md:m-10 sm:m-6">
       <h1 className="text-3xl md:text-4xl font-bold mb-8 font-mono">Work_</h1>
       <div className="flex flex-wrap gap-6 mb-8">
         {categories.map((category) => (

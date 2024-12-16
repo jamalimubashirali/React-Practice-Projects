@@ -2,11 +2,11 @@ import React from "react";
 
 const ProjectCard = ({ title, image, deploylink, des, techStack }) => {
   return (
-    <div className="border shadow-lg flex flex-row gap-4">
+    <div className="border shadow-lg flex flex-col lg:flex-row md:flex-row gap-4">
       <img
         src={image || "https://via.placeholder.com/150"}
         alt="Project"
-        className="w-[40%] h-80 object-cover"
+        className="w-[100%] lg:w-[40%] md:w-[50%] h-80 object-cover"
       />
       <div className="flex flex-col p-4">
         <h1 className="text-lg font-bold mb-4">{title}</h1>
