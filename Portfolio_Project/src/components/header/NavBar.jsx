@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import Navlinks from "./Navlinks";
 import Biodata from "./Biodata";
 
-const NavBar = () => {
+const NavBar = ({navLinks , bioData , socialData}) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -28,12 +27,7 @@ const NavBar = () => {
           isOpen ? "flex" : "hidden"
         } flex-col md:flex md:flex-row flex-wrap gap-4 md:gap-6 lg:gap-8 xl:gap-8 text-gray-300 transition-all duration-300 ease-in-out`}
       >
-        <Navlinks data={"Hello"} />
-        <Navlinks data={"Services"} />
-        <Navlinks data={"Resume"} />
-        <Navlinks data={"Skills"} />
-        <Navlinks data={"Portfolio"} />
-        <Navlinks data={"Contact"} />
+        {navLinks.map((link , index) => <Navlinks key={index} data={link}/>)}
       </div>
 
       {/* Biodata Section */}

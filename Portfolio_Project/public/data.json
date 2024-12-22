@@ -1,0 +1,131 @@
+{
+  "about": "I’m Mubashir Ali, a Software Engineering student with a passion for Machine Learning, Cloud Computing, and Technology Innovations. I thrive in collaborative environments and enjoy creating innovative solutions. When I’m not coding, I’m exploring AI research or cheering for Real Madrid.",
+  "bioData": {
+    "tagLine": "Full Stack Software Engineer , AI and ML Enthusiast",
+    "name": "Mubashir Ali",
+    "age": 20,
+    "email": "jamalimubashirali@gmail.com",
+    "phone": "+92 341 8182700",
+    "address": "Karachi, Pakistan"
+  },
+  "socials": [
+    {
+      "name": "Github",
+      "link": "https://github.com/jamalimubashirali"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/mubashiralijamali"
+    },
+    {
+      "name": "Kaggle",
+      "link": "https://www.kaggle.com/mubashir071"
+    }
+  ],
+  "navLinks": ["Hello", "Services", "Resume", "Skills", "Portfolio", "Contact"],
+  "services": [
+    {
+      "name": "Web Development",
+      "desc": "I offer full-stack web development using the MERN stack and Django, specializing in creating efficient, scalable, and user-friendly applications. My services include backend development, frontend design, and seamless integration to ensure an optimal user experience"
+    },
+    {
+      "name": "Mobile App Development",
+      "desc": "I am a mobile app developer skilled in Flutter, focusing on building high-performance, cross-platform apps with smooth user experiences. I deliver clean, maintainable code and seamless integrations for both iOS and Android platforms."
+    },
+    {
+      "name": "AI/ML System Development",
+      "desc": "I specialize in developing AI and machine learning solutions to solve complex problems using data-driven approaches. From model development to deployment, I focus on delivering scalable and efficient AI systems that drive innovation and automation."
+    }
+  ],
+  "education": [
+    {
+      "instituteName": "Mehran University of Engineering and Technology, Jamshoro",
+      "startDate": "11-2021",
+      "endDate": "11-2025",
+      "degreeName": "Bechelor's in Engineering Software Engineering"
+    },
+    {
+      "instituteName": "Govt : Degree College, Larkana",
+      "startDate": "08-2019",
+      "endDate": "08-2021",
+      "degreeName": "Intermediate (Pre-Engineering)"
+    }
+  ],
+  "employment": [
+    {
+      "companyName": "Bytewise Limited",
+      "startDate": "06-2024",
+      "endDate": "09-2024",
+      "jobPost": "Full Stack Web Dev Internship"
+    },
+    {
+      "companyName": "Bytewise Limited",
+      "startDate": "04-2023",
+      "endDate": "06-2023",
+      "jobPost": "Azure Cloud Internship"
+    }
+  ],
+  "skills": {
+    "Frontend": [
+      { "name": "React", "level": 85 },
+      { "name": "HTML & CSS", "level": 80 },
+      { "name": "Tailwind CSS", "level": 80 },
+      { "name": "JavaScript", "level": 88 }
+    ],
+    "Backend": [
+      { "name": "Node.js", "level": 75 },
+      { "name": "Express.js", "level": 70 },
+      { "name": "MongoDB", "level": 65 },
+      { "name": "REST API", "level": 80 }
+    ],
+    "AI": [
+      { "name": "Python", "level": 70 },
+      { "name": "Machine Learning", "level": 60 },
+      { "name": "Data Visualization", "level": 70 },
+      { "name": "Data Analysis", "level": 65 }
+    ]
+  },
+  "work": {
+    "web": [
+      {
+        "name": "Project 1",
+        "image": "",
+        "des": "A web project demonstrating HTML, CSS, and JavaScript.",
+        "techStack": ["CSS", "HTML", "JavaScript"],
+        "websiteLink": "https://www.google.com"
+      },
+      {
+        "name": "Project 2",
+        "image": "",
+        "des": "Another exciting web project.",
+        "techStack": ["CSS", "HTML", "JavaScript"],
+        "websiteLink": "https://www.google.com"
+      }
+    ],
+    "mobile": [
+      {
+        "name": "Mobile Project 1",
+        "image": "",
+        "des": "A mobile project using Flutter.",
+        "techStack": ["Dart", "Flutter"],
+        "websiteLink": "https://www.google.com"
+      },
+      {
+        "name": "Mobile Project 2",
+        "image": "",
+        "des": "Another mobile project with amazing features.",
+        "techStack": ["Dart", "Flutter"],
+        "websiteLink": "https://www.google.com"
+      }
+    ],
+    "ai": [
+      {
+        "name": "AI Project 1",
+        "image": "",
+        "des": "An AI project showcasing Python and Pandas.",
+        "techStack": ["Python", "Numpy", "Pandas"],
+        "websiteLink": "https://www.google.com"
+      }
+    ]
+  }
+}
