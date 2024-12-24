@@ -1,51 +1,7 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 
-const Portfolio = () => {
-  const work = {
-    web: [
-      {
-        name: "Project 1",
-        image: "",
-        des: "A web project demonstrating HTML, CSS, and JavaScript.",
-        techStack: ["CSS", "HTML", "JavaScript"],
-        websiteLink: "https://www.google.com",
-      },
-      {
-        name: "Project 2",
-        image: "",
-        des: "Another exciting web project.",
-        techStack: ["CSS", "HTML", "JavaScript"],
-        websiteLink: "https://www.google.com",
-      },
-    ],
-    mobile: [
-      {
-        name: "Mobile Project 1",
-        image: "",
-        des: "A mobile project using Flutter.",
-        techStack: ["Dart", "Flutter"],
-        websiteLink: "https://www.google.com",
-      },
-      {
-        name: "Mobile Project 2",
-        image: "",
-        des: "Another mobile project with amazing features.",
-        techStack: ["Dart", "Flutter"],
-        websiteLink: "https://www.google.com",
-      },
-    ],
-    ai: [
-      {
-        name: "AI Project 1",
-        image: "",
-        des: "An AI project showcasing Python and Pandas.",
-        techStack: ["Python", "Numpy", "Pandas"],
-        websiteLink: "https://www.google.com",
-      },
-    ],
-  };
-
+const Portfolio = ({work}) => {
   const [workItems, setWorkItems] = useState([...work.web, ...work.mobile, ...work.ai]);
   const [activeCategory, setActiveCategory] = useState("All");
 
