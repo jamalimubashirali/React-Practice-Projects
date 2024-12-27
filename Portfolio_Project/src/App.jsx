@@ -43,7 +43,7 @@ function App() {
   console.log(data)
 
   return (
-    <div className="m-0 font-mono">
+    <div className="m-0 font-mono bg-gray-200">
       <Header headerData = {
         {
           navLinks : data.navLinks,

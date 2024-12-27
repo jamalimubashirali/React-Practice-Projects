@@ -24,8 +24,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full md:w-[40%] text-white">
-      <p className="text-lg text-gray-300 mb-10">
+    <div className="w-full md:w-[40%] text-gray-secondary">
+      <p className="text-lg text-gray-secondary mb-10">
         Feel free to reach out to me for collaborations, inquiries, or just to say hello!
       </p>
       {successMessage && (
@@ -42,7 +42,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
+            className="mt-1 block w-full border-2 border-gray-300 text-gray-primary p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
             required
           />
         </div>
@@ -56,7 +56,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
+            className="mt-1 block w-full border-2 border-gray-300 text-gray-primary p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
             required
           />
         </div>
@@ -70,14 +70,14 @@ const ContactForm = () => {
             rows="4"
             value={formData.message}
             onChange={handleChange}
-            className="mt-1 block w-full border-2 border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
+            className="mt-1 block w-full border-2 border-gray-300 text-gray-primary p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all ease-in-out duration-300"
             required
           ></textarea>
           <p className="mb-2 mt-2 font-semibold">Write all the given fields</p>
         </div>
         <button
           type="submit"
-          className="w-full bg-gray-800 text-white py-3 px-4 rounded-full hover:bg-gray-900 uppercase font-bold transition-colors shadow-lg"
+          className="w-full bg-gray-secondary text-gray-primary py-3 px-4 rounded-full hover:bg-gray-primary hover:text-gray-secondary uppercase font-bold transition-colors shadow-md shadow-gray-400"
         >
           Send Message
         </button>

@@ -3,9 +3,9 @@ import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   return (
-    <div className="p-6 lg:p-20 md:p-10 text-white bg-slate-800">
+    <div className="p-6 lg:p-20 md:p-10 text-gray-secondary bg-gray-primary">
       <h2 className="text-4xl font-bold mb-8">Get in touch_</h2>
-      <div className="flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-44">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-72">
         <div className="flex flex-col gap-4 md:text-left">
           <h3 className="text-2xl font-semibold uppercase tracking-wider">Contact Information</h3>
           <p className="font-bold uppercase text-xl">
@@ -19,7 +19,7 @@ const ContactSection = () => {
           </p>
           <p className="font-bold uppercase text-xl">
             Phone:{" "}
-            <a href="tel:+1234567890" className="text-blue-500 hover:underline text-lg">
+            <a href="tel:+1234567890" className="text-gray-secondary hover:underline text-lg">
               +92 341 8182700
             </a>
           </p>
