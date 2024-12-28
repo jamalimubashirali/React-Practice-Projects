@@ -17,7 +17,7 @@ const Portfolio = ({work}) => {
   const categories = ["All", "Web", "Mobile", "AI"];
 
   return (
-    <div className="m-6 lg:m-20 md:m-10 sm:m-6">
+    <div id="portfolio" className="m-6 lg:m-20 md:m-10 sm:m-6 text-gray-primary">
       <h1 className="text-3xl md:text-4xl font-bold mb-8 font-mono">Work_</h1>
       <div className="flex flex-wrap gap-6 mb-8">
         {categories.map((category) => (
@@ -50,7 +50,7 @@ const WorkType = ({ name, isActive, handleFilter }) => {
     <button
       onClick={() => handleFilter(name)}
       className={`font-bold font-mono uppercase text-sm md:text-lg px-4 py-1 rounded-full transition-colors duration-300 ease-in-out 
-        ${isActive ? "bg-black text-white" : "bg-gray-200 text-gray-800 hover:bg-gray-300"} shadow-lg`}
+        ${isActive ? "bg-gray-primary text-white" : "bg-gray-secondary text-gray-primary hover:bg-gray-300"} shadow-lg shadow-gray-primary`}
       aria-label={`Filter by ${name}`}
     >
       {name}

@@ -3,8 +3,8 @@ import SkillSlider from "./SkillSlider";
 
 const Skills = ({ skills }) => {
   return (
-    <div className="m-6 lg:m-20 md:m-10 sm:m-6">
-      <h1 className="text-4xl font-bold mb-10 transition-all duration-300 ease-in-out transform hover:scale-105">
+    <div id="skills" className="m-6 lg:m-20 md:m-10 sm:m-6">
+      <h1 className="text-4xl font-bold mb-10 text-gray-primary transition-all duration-300 ease-in-out transform hover:scale-105">
         Skills_
       </h1>
       <div className="w-full flex flex-col md:flex-row md:flex-wrap lg:flex-row lg:flex-wrap gap-4 justify-center sm:gap-4 md:gap-8 lg:gap-20">

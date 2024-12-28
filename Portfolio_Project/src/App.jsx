@@ -9,15 +9,15 @@ import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true); 
-  const [error, setError] = useState(null); 
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     // Fetch data on mount
-    fetch('./data.json') 
+    fetch("./data.json")
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -29,7 +29,7 @@ function App() {
         setError(error.message); // Set error state
         setLoading(false); // Stop loading on error
       });
-  }, []); 
+  }, []);
 
   // Conditional rendering based on loading or error
   if (loading) {
@@ -39,23 +39,21 @@ function App() {
   if (error) {
     return <div>Error: {error}</div>;
   }
-
-  console.log(data)
-
+  
   return (
-    <div className="m-0 font-mono bg-gray-200">
-      <Header headerData = {
-        {
-          navLinks : data.navLinks,
-          bioData : data.bioData,
-          about : data.about,
-          socailData : data.socials
-        }
-      }/>
-      <Services services = {data.services}/>
-      <Resume  education = {data.education} employment = {data.employment}/>
-      <Skills skills = {data.skills}/>
-      <Portfolio work = {data.work}/>
+    <div className="m-0 font-mono bg-gray-secondary">
+      <Header
+        headerData={{
+          navLinks: data.navLinks,
+          bioData: data.bioData,
+          about: data.about,
+          socialData: data.socials,
+        }}
+      />
+      <Services services={data.services} />
+      <Resume education={data.education} employment={data.employment} />
+      <Skills skills={data.skills} />
+      <Portfolio work={data.work} />
       <ContactSection />
       <Footer />
     </div>

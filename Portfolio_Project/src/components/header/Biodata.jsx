@@ -2,7 +2,7 @@ import React from "react";
 import BiodataItem from "./BiodataItem";
 import SocialItem from "./SocialItem";
 
-const Biodata = () => {
+const Biodata = ({bioData , socialData}) => {
   return (
     <div className="relative lg:mt-8 md:mt-6">
       <div className="flex flex-col md:flex-row lg:gap-16 md:gap-8 items-center">
@@ -13,27 +13,25 @@ const Biodata = () => {
         />
         <div className="flex flex-col mt-6 lg:mt-0 md:mt-0 md:max-w-[50%] gap-1">
           <h1 className="lg:text-5xl text-3xl md:text-3xl xl:text-6xl text-gray-100 font-bold">
-            Mubashir Ali_
+            {bioData.name + "_"}
           </h1>
           <p className="text-gray-200 lg:text-lg md:text-sm">
-            Full Stack Engineer, AI and ML Enthusiast
+            {bioData.tagLine}
           </p>
           <div className="my-2 md:my-0 flex flex-col gap-2 text-white">
-            <BiodataItem itemData={"20"} itemDes={"Age"} />
-            <BiodataItem itemDes={"Phone"} itemData={"(+92) 325 3710650"} />
+            <BiodataItem itemData={bioData.age} itemDes={"Age"} />
+            <BiodataItem itemDes={"Phone"} itemData={bioData.phone} />
             <BiodataItem
-              itemData={"jamalimubashirali@gmail.com"}
+              itemData={bioData.email}
               itemDes={"Email"}
             />
             <BiodataItem
               itemDes={"Address"}
-              itemData={"Village Sher Muhammad Jamali, Larkana"}
+              itemData={bioData.address}
             />
           </div>
           <div className="flex flex-row gap-4">
-            <SocialItem icon={"Github"} />
-            <SocialItem icon={"LinkedIn"} />
-            <SocialItem icon={"Kaggle"} />
+            {socialData.map((social) => <SocialItem social = {social}/>)}
           </div>
         </div>
       </div>

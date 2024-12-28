@@ -18,14 +18,14 @@ const FirstBar = styled.div`
   width: ${props => props.skillLevel}%;  // Dynamically set the width
   height: 100%;
   border-radius: 50px;
-  background-color: #4caf50;
+  background-color: #111827;
   transition: all 0.5s ease-out;
 `;
 
 const SkillSlider = ({ skillName, skillLevel }) => {
   return (
     <div className="mb-6">
-      <label className="text-base lg:text-lg font-medium flex items-center justify-between transition-all duration-300 ease-in-out transform hover:scale-105">
+      <label className="text-base text-gray-primary lg:text-lg font-medium flex items-center justify-between transition-all duration-300 ease-in-out transform hover:scale-105">
         <span>{skillName}</span>
         <span>{skillLevel}%</span>
       </label>

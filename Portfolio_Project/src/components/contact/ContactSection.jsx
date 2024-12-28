@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   return (
-    <div className="p-6 lg:p-20 md:p-10 text-gray-secondary bg-gray-primary">
+    <div id="contact" className="p-6 lg:p-20 md:p-10 text-gray-secondary bg-gray-primary">
       <h2 className="text-4xl font-bold mb-8">Get in touch_</h2>
       <div className="flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-72">
         <div className="flex flex-col gap-4 md:text-left">

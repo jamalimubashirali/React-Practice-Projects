@@ -1,9 +1,11 @@
 import React from "react";
 
-const SocialItem = ({ icon }) => {
+const SocialItem = ({ social }) => {
   return (
-    <div className="text-gray-700 cursor-pointer hover:text-gray-100 transition-colors duration-300 ease-in-out text-sm md:text-lg">
-      {icon}
+    <div title={social.name} className="mt-3 text-gray-secondary cursor-pointer hover:text-gray-400 transition-colors duration-300 ease-in-out text-sm md:text-lg">
+      <a href={social.link}>
+        <i className={`${social.icon} text-3xl`}></i>
+      </a>
     </div>
   );
 };
