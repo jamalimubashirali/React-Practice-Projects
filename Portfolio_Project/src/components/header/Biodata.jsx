@@ -31,7 +31,7 @@ const Biodata = ({bioData , socialData}) => {
             />
           </div>
           <div className="flex flex-row gap-4">
-            {socialData.map((social) => <SocialItem social = {social}/>)}
+            {socialData.map((social , index) => <SocialItem key={index} social = {social}/>)}
           </div>
         </div>
       </div>

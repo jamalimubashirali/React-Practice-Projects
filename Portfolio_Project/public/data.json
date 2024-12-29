@@ -12,17 +12,17 @@
     {
       "name": "Github",
       "link": "https://github.com/jamalimubashirali",
-      "icon" : "fab fa-github"
+      "icon": "fab fa-github"
     },
     {
       "name": "LinkedIn",
       "link": "https://www.linkedin.com/in/mubashiralijamali",
-      "icon" : "fab fa-linkedin"
+      "icon": "fab fa-linkedin"
     }
   ],
   "navLinks": [
-    {"label" : "Hello" , "href" : "home"},
-    {"label" : "About" , "href" : "about"},
+    { "label": "Hello", "href": "home" },
+    { "label": "About", "href": "about" },
     { "label": "Services", "href": "services" },
     { "label": "Resume", "href": "resume" },
     { "label": "Skills", "href": "skills" },
@@ -32,17 +32,17 @@
   "services": [
     {
       "name": "Web Development",
-      "logo" : "fas fa-code",
+      "logo": "fas fa-code",
       "desc": "I offer full-stack web development using the MERN stack and Django, specializing in creating efficient, scalable, and user-friendly applications. My services include backend development, frontend design, and seamless integration to ensure an optimal user experience"
     },
     {
       "name": "Mobile App Development",
-      "logo" : "fas fa-mobile-alt",
+      "logo": "fas fa-mobile-alt",
       "desc": "I am a mobile app developer skilled in Flutter, focusing on building high-performance, cross-platform apps with smooth user experiences. I deliver clean, maintainable code and seamless integrations for both iOS and Android platforms."
     },
     {
       "name": "AI/ML System Development",
-      "logo" : "fas fa-robot",
+      "logo": "fas fa-robot",
       "desc": "I specialize in developing AI and machine learning solutions to solve complex problems using data-driven approaches. From model development to deployment, I focus on delivering scalable and efficient AI systems that drive innovation and automation."
     }
   ],
@@ -101,40 +101,17 @@
         "image": "",
         "des": "A web project demonstrating HTML, CSS, and JavaScript.",
         "techStack": ["CSS", "HTML", "JavaScript"],
-        "websiteLink": "https://www.google.com"
+        "websiteLink": "https://jamalimubashirali.github.io/Summary-Drive/"
       },
       {
-        "name": "Project 2",
+        "name": "Hello Coder",
         "image": "",
         "des": "Another exciting web project.",
         "techStack": ["CSS", "HTML", "JavaScript"],
-        "websiteLink": "https://www.google.com"
+        "websiteLink": "https://jamalimubashirali.github.io/HelloCoder/"
       }
     ],
-    "mobile": [
-      {
-        "name": "Mobile Project 1",
-        "image": "",
-        "des": "A mobile project using Flutter.",
-        "techStack": ["Dart", "Flutter"],
-        "websiteLink": "https://www.google.com"
-      },
-      {
-        "name": "Mobile Project 2",
-        "image": "",
-        "des": "Another mobile project with amazing features.",
-        "techStack": ["Dart", "Flutter"],
-        "websiteLink": "https://www.google.com"
-      }
-    ],
-    "ai": [
-      {
-        "name": "AI Project 1",
-        "image": "",
-        "des": "An AI project showcasing Python and Pandas.",
-        "techStack": ["Python", "Numpy", "Pandas"],
-        "websiteLink": "https://www.google.com"
-      }
-    ]
+    "mobile": [],
+    "ai": []
   }
 }

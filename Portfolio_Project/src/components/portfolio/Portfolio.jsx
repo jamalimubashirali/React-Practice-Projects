@@ -30,20 +30,33 @@ const Portfolio = ({work}) => {
         ))}
       </div>
       <div className="flex flex-col gap-6">
-        {workItems.map((item, index) => (
+        {workItems.length > 0 ? workItems.map((item, index) => (
           <ProjectCard
-            key={index}
-            title={item.name}
-            image={item.image}
-            deploylink={item.websiteLink}
-            des={item.des}
-            techStack={item.techStack}
-          />
-        ))}
+          key={index}
+          title={item.name}
+          image={item.image}
+          deploylink={item.websiteLink}
+          des={item.des}
+          techStack={item.techStack}
+        />
+        )) : <Empty />}
       </div>
     </div>
   );
 };
+
+
+
+const Empty = () => {
+  return (
+    <div className="mx-auto py-10 justify-center items-center">
+      <h1 className="text-gray-primary text-xl md:text-3xl sm:text-2xl lg:text-5xl font-bold">
+        Projects to be Added...
+      </h1>
+    </div>
+  )
+}
+
 
 const WorkType = ({ name, isActive, handleFilter }) => {
   return (
