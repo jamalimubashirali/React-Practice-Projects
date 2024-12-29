@@ -49,7 +49,7 @@ const WorkType = ({ name, isActive, handleFilter }) => {
   return (
     <button
       onClick={() => handleFilter(name)}
-      className={`font-bold font-mono uppercase text-sm md:text-lg px-4 py-1 rounded-full transition-colors duration-300 ease-in-out 
+      className={`font-bold font-mono uppercase text-sm md:text-lg px-4 py-1 transition-colors duration-300 ease-in-out 
         ${isActive ? "bg-gray-primary text-white" : "bg-gray-secondary text-gray-primary hover:bg-gray-300"} shadow-lg shadow-gray-primary`}
       aria-label={`Filter by ${name}`}
     >

@@ -4,8 +4,8 @@ import SocialItem from "./SocialItem";
 
 const Biodata = ({bioData , socialData}) => {
   return (
-    <div className="relative lg:mt-8 md:mt-6">
-      <div className="flex flex-col md:flex-row lg:gap-16 md:gap-8 items-center">
+    <div className="relative">
+      <div className="lg:py-8 md:py-6 py-3 px-5 flex flex-col md:bg-[url('/src/assets/bg-hero.jpg')] bg-cover bg-center bg-blend-overlay bg-gray-primary justify-evenly md:flex-row-reverse lg:gap-16 md:gap-8 items-center">
         <img
           src="src/assets/My_Pic.jpg"
           alt="Profile"

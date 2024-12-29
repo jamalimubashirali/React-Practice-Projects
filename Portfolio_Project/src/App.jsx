@@ -6,7 +6,7 @@ import Skills from "./components/skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
 import ContactSection from "./components/contact/ContactSection";
 import Footer from "./components/Footer";
-
+import About from "./components/header/About";
 function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -46,10 +46,10 @@ function App() {
         headerData={{
           navLinks: data.navLinks,
           bioData: data.bioData,
-          about: data.about,
           socialData: data.socials,
         }}
       />
+      <About aboutData={data.about}/>
       <Services services={data.services} />
       <Resume education={data.education} employment={data.employment} />
       <Skills skills={data.skills} />
